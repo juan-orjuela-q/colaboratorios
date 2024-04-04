@@ -1,0 +1,19 @@
+.naranja {
+    position:absolute;
+    width: 460px;
+    height: 460px;
+    right: 0;
+    background: url('/naranja/base.webp') no-repeat center;
+    background-size: contain;
+    top: -20px;
+    z-index: 1;
+}
+.frames {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    background: url('/naranja/petalos1.webp') no-repeat center;
+    background-size: contain;
+}

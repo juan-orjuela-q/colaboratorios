@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Flotante from '../Flotante/Flotante';
 import Evento from '../Evento/Evento';
+import Naranja from '../Naranja/Naranja';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function SectionAprendizaje() {
@@ -25,9 +26,7 @@ function SectionAprendizaje() {
         <div className={styles.sectionAprendizaje} ref={sectionAprendizaje}>
             <header className={`${styles.header} container`}>
                 <img className={styles.aprendizajeTitulo} src="/aprendizaje/aprendizaje.svg" alt="Prepárate para el aprendizaje" />
-                <div className={styles.naranja}>
-
-                </div>
+                <Naranja />
                 <Flotante tipo="Molecula" estilos={{ top: '20px' }} />
                 <Flotante tipo="Cubo" estilos={{ right: '0', top: '-30px', width: '100px' }} />
             </header>
