@@ -13,8 +13,12 @@ function SectionIntro({ isopen, setIsopen }) {
                 <div className="container">
                     <img className={styles.logoImagix} src="/intro/logoImagix.svg" alt="Imagix" />
                     <div className={styles.info}>
-                        <img src="/intro/colaboratorioLogo.svg" alt="Colaboraorios" />
-                        
+                        <img src="/intro/colaboratorioLogo.svg" alt="Colaboratorios" />
+                        <p className="bold">
+                            Estás en el lugar para experimentar, colaborar e
+                            innovar, descubre las mezclas que elevarán
+                            los <strong>índices de creatividad.</strong>
+                        </p>
                     </div>
                 </div>
                 <div className={styles.media}>
@@ -28,7 +32,7 @@ function SectionIntro({ isopen, setIsopen }) {
                         <div className={styles.cortina22}></div>
                     </div>
                 </div>
-                {!isopen && <button className='btn' onClick={handleClick}>EMPEZAR</button>}
+                {!isopen && <button className={`btn ${styles.boton}`} onClick={handleClick}>EMPEZAR</button>}
             </div>
             {isopen && <Objetivos />}
         </>
