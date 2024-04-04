@@ -1,7 +1,7 @@
 .sectionIntro {
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: max(100vh, 780px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +38,7 @@
 }
 .media img{
     position: absolute;
-    bottom: -120px;
+    top: 300px;
     width: 390px;
     margin-left: -195px;
     left: 50%;
@@ -49,7 +49,7 @@
     width: 1280px;
     left: 50%;
     margin-left: -620px;
-    top: -90px;
+    top: -110px;
 }
 .cortinas {
     position: absolute;
@@ -92,4 +92,55 @@
     background: url(/intro/cortinaDer2.svg) no-repeat left bottom;
     background-size: auto 100%;
     z-index: 1;
+}
+.sectionIntro.open {
+    min-height: max(110vh, 1020px);
+}
+.objetivos {
+    position: relative;
+    z-index: 9;
+}
+.objetivos img {
+    width: 580px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.objetivos ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.objetivos ul li {
+    width: 45%;
+    padding-left: 70px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+}
+.objetivos ul li:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.objetivos ul li:nth-child(1):before {
+    background-image: url(/intro/num1.svg);
+}
+.objetivos ul li:nth-child(2):before {
+    background-image: url(/intro/num2.svg);
+}
+.objetivos ul li:nth-child(3):before {
+    background-image: url(/intro/num3.svg);
+}
+.objetivos ul li:nth-child(4):before {
+    background-image: url(/intro/num4.svg);
 }

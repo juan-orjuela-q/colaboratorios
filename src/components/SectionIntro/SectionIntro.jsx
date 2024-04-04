@@ -1,7 +1,17 @@
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import styles from './SectionIntro.module.css'
 function SectionIntro({ isopen, setIsopen }) {
     const sectionIntro = useRef()
+    const videoLimon = useRef()
+
+    //Reproducir video si isOpen es true, usando useEffect
+    useEffect(() => {
+        if (isopen) {
+            videoLimon.current.play()
+            sectionIntro.current.classList.add(styles.open)
+        }
+    }, [isopen])
+
 
     function handleClick() {
         setIsopen(true)
@@ -22,8 +32,8 @@ function SectionIntro({ isopen, setIsopen }) {
                     </div>
                 </div>
                 <div className={styles.media}>
-                    <img src="/intro/pedestal.webp" alt="" />
-                    <video src="/intro/limon.mp4"></video>
+                    <img src="/intro/pedestal_largo.svg" alt="" />
+                    <video src="/intro/limon.mp4" ref={videoLimon}></video>
                 </div>
                 <div className={styles.cortinas}>
                     <div className={styles.cortina1}></div>
@@ -33,8 +43,9 @@ function SectionIntro({ isopen, setIsopen }) {
                     </div>
                 </div>
                 {!isopen && <button className={`btn ${styles.boton}`} onClick={handleClick}>EMPEZAR</button>}
+                {isopen && <Objetivos />}
             </div>
-            {isopen && <Objetivos />}
+            
         </>
     )
 }
@@ -46,12 +57,12 @@ function Objetivos() {
         <div className={styles.objetivos} ref={objetivos}>
 
             <div className="container">
-                <img src="/intro/losObjetivos.svg" alt="" />
+                <img src="/intro/losObjetivos.svg" alt="Los objetivos de la experimentación" />
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Identificar el aporte de la <strong>mente creativa.</strong></li>
+                    <li>Deducir métodos de <strong>experimentación activa.</strong></li>
+                    <li>Verificar el poder del <strong>aprendizaje colaborativo.</strong></li>
+                    <li>Descubrir <strong>fórmulas</strong> simples y poderosas para <strong>innovar.</strong></li>
                 </ul>
             </div>
 
