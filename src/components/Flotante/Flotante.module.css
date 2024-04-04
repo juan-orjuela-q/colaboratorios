@@ -1,0 +1,16 @@
+.flotante {
+    position: absolute;
+    min-width: 80px;
+    min-height: 80px;
+    animation: rotar 10s linear infinite;
+
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

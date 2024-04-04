@@ -1,0 +1,47 @@
+.sectionAprendizaje {
+    background-color: #26AAE1;
+}
+.header {
+    padding-top: 200px !important;
+    position: relative;
+    margin-bottom: 90px!important;
+}
+.aprendizajeTitulo {
+    width: 600px;
+    position: relative;
+    z-index: 2;
+}
+.naranja {
+    position:absolute;
+    width: 460px;
+    height: 460px;
+    right: 0;
+    background: rgba(0, 0, 255, 0.116);
+    top: -20px;
+    z-index: 1;
+}
+/*Agenda*/
+.agenda {
+    display: flex;
+    justify-content: space-between;
+}
+.col1, .col2 {
+    width: 40%;
+}
+.col1 > img {
+    width: 337px;
+    margin-bottom: 48px;
+}
+.col2 {
+    text-align: right;
+}
+.col2 > img {
+    width: 302px;
+    margin-bottom: 48px;
+}
+.erlenmeyer {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
