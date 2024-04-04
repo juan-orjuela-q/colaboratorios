@@ -32,14 +32,14 @@ function SectionIntro({ isopen, setIsopen }) {
         //Timeline
         const tl = gsap.timeline({ease: "power3.out"});
         
-        tl.to(`.${styles.cortina1}`, {  x: '-25%', scale: 1.2, duration: 1 })
-        tl.to(`.${styles.cortina2}`, {  x: '70%', scale: 1.25, duration: 1 },'<')
+        tl.to(`.${styles.cortina1}`, {  x: '-30vw', scale: 1.2, duration: 1 })
+        tl.to(`.${styles.cortina2}`, {  x: '40vw', scale: 1.25, duration: 1 },'<')
         tl.to(`.${styles.cortina21}`, {  x: '-10%', scale: 1.2, duration: 1 },'<')
         tl.to(`.${styles.cortina22}`, {  x: '-20%', scale: 1.2, duration: 1 },'<')
         tl.from(`.${styles.media} img`, {  y: '50%', scale: 0.6, duration: 1.5 },'<')
         tl.from(`.${styles.media} video`, {  opacity: 0, duration: 1.5 },'<1.5')
         tl.from(`.${styles.logoImagix}, .${styles.info} img, .${styles.info} p`, { opacity: 0, duration: 1, stagger: 0.25 }, '<0.75')
-        tl.to('.btn', { opacity: 1, duration: 1 })
+        tl.to('.btn', { opacity: 1, duration: 1, delay:1 }, '<')
         
 
     }, { scope: sectionIntro });

@@ -10,10 +10,14 @@
 }
 .logoImagix {
     width: 150px;
-    margin: 20px 0; 
+    margin: 20px 0;
+    position: relative;
+    z-index: 3; 
 }
 .info {
     text-align: center;
+    position: relative;
+    z-index: 3; 
 }
 .info img {
     width: 520px;
@@ -35,7 +39,7 @@
     width: 200px;
     margin-left: -100px;
     text-align: center;
-    opacity: 1;
+    opacity: 0;
 }
 .media img{
     position: absolute;
