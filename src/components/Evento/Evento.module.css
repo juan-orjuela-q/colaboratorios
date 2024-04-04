@@ -1,6 +1,4 @@
-.evento {
-    
-}
+
 .evento :global(.hora) {
     font-size: 30px;
     font-weight: 900;
@@ -30,4 +28,7 @@
 }
 .evento a:hover {
     box-shadow: 0 0 40px 0 #3339aad8 !important;
+}
+:global(.btnZoom) {
+    opacity: 0;
 }

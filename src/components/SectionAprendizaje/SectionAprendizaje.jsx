@@ -12,6 +12,15 @@ function SectionAprendizaje() {
 
     const sectionAprendizaje = useRef()
 
+    useGSAP(() => {
+        gsap.from(`.${styles.aprendizajeTitulo}`, { scale: 0, duration: 1, scrollTrigger: { trigger: `.${styles.aprendizajeTitulo}`, start: 'top 80%' } })
+        gsap.from('.martes', { scale: 0, duration: 1, scrollTrigger: { trigger: '.martes', start: 'top 80%' } })
+        gsap.from('.jueves', {scale: 0, duration: 1, scrollTrigger: { trigger: '.jueves', start: 'top 80%' } })
+        gsap.from('.erlenmeyer', { y: '100%', opacity: 0, duration: 2, scrollTrigger: { trigger: '.erlenmeyer', start: 'top 80%' } })
+        gsap.from('.recomendacion', { opacity: 0, y: '100px', duration: 1, scrollTrigger: { trigger: '.recomendacion', start: 'top 80%' } })
+
+    }, { scope: sectionAprendizaje });
+
     return (
         <div className={styles.sectionAprendizaje} ref={sectionAprendizaje}>
             <header className={`${styles.header} container`}>
@@ -24,7 +33,7 @@ function SectionAprendizaje() {
             </header>
             <div className={`${styles.agenda} container`}>
                 <div className={styles.col1}>
-                    <img src="/aprendizaje/martes.svg" alt="" />
+                    <img className='martes' src="/aprendizaje/martes.svg" alt="" />
                     <Evento
                         hora="8:00 am"
                         titulo="APERTURA DEL ENCUENTRO"
@@ -58,7 +67,7 @@ function SectionAprendizaje() {
                         enlace="#" />
                 </div>
                 <div className={styles.col2}>
-                    <img src="/aprendizaje/jueves.svg" alt="" />
+                    <img className='jueves' src="/aprendizaje/jueves.svg" alt="" />
                     <Evento
                         hora="9:00 am"
                         titulo="LA CIENCIA DE LA CREATIVIDAD"
@@ -78,8 +87,15 @@ function SectionAprendizaje() {
                         descripcion="Realizar pruebas controladas
                         para poner a prueba
                         los retos de simplicidad. " />
+                    <Flotante tipo="Molecula" estilos={{ right: '-160px', bottom: '-30px', width: '100px', position: 'relative' }} />
+                    <p className={styles.recomendacion}>Es importante fomentar un
+                        ambiente <strong>ABIERTO, INCLUSIVO
+                        Y CREATIVO</strong> durante todo
+                        el proceso experimental</p>
                 </div>
-                <div className={styles.erlenmeyer}></div>
+                <div className={styles.erlenmeyer}>
+                    <img src="/aprendizaje/erlenmeyer.webp" alt="" />
+                </div>
             </div>
 
         </div>

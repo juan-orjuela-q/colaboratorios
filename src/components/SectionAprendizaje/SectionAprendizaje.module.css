@@ -1,5 +1,6 @@
 .sectionAprendizaje {
     background-color: #26AAE1;
+    
 }
 .header {
     padding-top: 200px !important;
@@ -24,9 +25,13 @@
 .agenda {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    min-height: 1420px;
 }
 .col1, .col2 {
     width: 40%;
+    position: relative;
+    z-index: 2;
 }
 .col1 > img {
     width: 337px;
@@ -39,9 +44,15 @@
     width: 302px;
     margin-bottom: 48px;
 }
+.recomendacion {
+    text-align: center;
+    margin-top: 80px;
+}
 .erlenmeyer {
-    width: 100px;
+    width: 535px;
+    height: 665px;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
 }
