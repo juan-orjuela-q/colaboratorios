@@ -98,7 +98,7 @@ function SectionAprendizaje() {
                     <img src="/aprendizaje/erlenmeyer.webp" alt="" />
                 </div>
             </div>
-
+        <img className='separador' src="/aprendizaje/separador1.svg" alt="" />
         </div>
     )
 }

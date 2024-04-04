@@ -1,0 +1,39 @@
+.sectionTaza{
+    background-color: #AACE3D;
+    position: relative;
+    margin-top: -20px;
+    
+}
+.header {
+    position: relative;
+    margin-top: -100px;
+}
+.tazaTitulo {
+    width: 474px;
+}
+.inscripciones {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 1420px;
+}
+.col1, .col2 {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+}
+.col1 > img {
+    width: 320px;
+}
+.probeta {
+    width: 222px;
+    height: 735px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.experimentaccion img {
+    width: 430px;
+    margin-top: 48px;
+}
