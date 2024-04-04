@@ -10,7 +10,7 @@ function Naranja() {
     const naranja = useRef()
 
     useGSAP(() => {
-        gsap.to(`.${styles.frames}`, { scale: 2.25, duration: 1, scrollTrigger: { trigger: `.${styles.frames}`, start: 'top 80%', end: 'top 100px', scrub: 1, markers: true } })
+        gsap.to(`.${styles.frames}`, { scale: 2.25, duration: 1, scrollTrigger: { trigger: `.${styles.frames}`, start: 'top 80%', end: 'top 100px', scrub: 1 } })
     }, { scope: naranja });
     return (
         <div className={styles.naranja} ref={naranja}>
