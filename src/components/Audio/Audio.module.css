@@ -1,0 +1,30 @@
+.audioBoton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background: #FFC335;
+    color: #24265C;
+    border: none;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    animation: entrar 0.5s;
+}
+.audioBoton img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes entrar {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
