@@ -1,5 +1,15 @@
 import { useRef, useEffect } from 'react'
 import styles from './SectionIntro.module.css'
+//Animation
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+
+
+
+
 function SectionIntro({ isopen, setIsopen }) {
     const sectionIntro = useRef()
     const videoLimon = useRef()
@@ -17,6 +27,22 @@ function SectionIntro({ isopen, setIsopen }) {
         setIsopen(true)
 
     }
+    //Animación
+    useGSAP(() => {
+        //Timeline
+        const tl = gsap.timeline({ease: "power3.out"});
+        
+        tl.to(`.${styles.cortina1}`, {  x: '-25%', scale: 1.2, duration: 1 })
+        tl.to(`.${styles.cortina2}`, {  x: '70%', scale: 1.25, duration: 1 },'<')
+        tl.to(`.${styles.cortina21}`, {  x: '-10%', scale: 1.2, duration: 1 },'<')
+        tl.to(`.${styles.cortina22}`, {  x: '-20%', scale: 1.2, duration: 1 },'<')
+        tl.from(`.${styles.media} img`, {  y: '50%', scale: 0.6, duration: 1.5 },'<')
+        tl.from(`.${styles.media} video`, {  opacity: 0, duration: 1.5 },'<1.5')
+        tl.from(`.${styles.logoImagix}, .${styles.info} img, .${styles.info} p`, { opacity: 0, duration: 1, stagger: 0.25 }, '<0.75')
+        tl.to('.btn', { opacity: 1, duration: 1 })
+        
+
+    }, { scope: sectionIntro });
     return (
         <>
             <div className={styles.sectionIntro} ref={sectionIntro}>
@@ -53,6 +79,17 @@ function SectionIntro({ isopen, setIsopen }) {
 function Objetivos() {
 
     const objetivos = useRef()
+    //Animación
+    useGSAP(() => {
+        //Timeline
+        const tl = gsap.timeline({ease: "power3.out"});
+        
+        tl.to('img', {  y: '5%', scale: 1.2, duration: 1 })        
+        tl.from('li', { opacity: 0, duration: 1, stagger: 0.25 }, '<0.75')
+        
+
+    }, { scope: objetivos });
+    
     return (
         <div className={styles.objetivos} ref={objetivos}>
 
