@@ -1,0 +1,19 @@
+.manzana {
+    position:absolute;
+    width: 550px;
+    height: 550px;
+    right: 240px;
+    background: url('/manzana/base.webp') no-repeat center;
+    background-size: contain;
+    top: -160px;
+    z-index: 1;
+}
+.frames {
+    position: absolute;
+    width: 287px;
+    height: 350px;
+    top: -42px;
+    right: 28px;
+    background:  url('/manzana/pedazo.webp') no-repeat center;
+    background-size: contain;
+}

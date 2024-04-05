@@ -37,3 +37,12 @@
     width: 430px;
     margin-top: 48px;
 }
+.manzana {
+    position: relative;
+}
+.manzana > img {
+    width: 270px;
+    position: absolute;
+    top:  -160px;
+    left: 0;
+}

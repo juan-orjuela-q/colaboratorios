@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Flotante from '../Flotante/Flotante';
 import Inscripcion from '../Inscripcion/Inscripcion';
 import Chile from '../Chile/Chile';
+import Manzana from '../Manzana/Manzana';
 
 //import Naranja from '../Naranja/Naranja';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -52,7 +53,11 @@ function SectionTaza() {
 
                 </div>
             </div>
-
+            <div className={`${styles.manzana} container`}>
+                <img src="/taza/fllecha.svg" alt="" />
+                <Manzana />
+            </div>
+            <img className='separador' src="/taza/separador2.svg" alt="" />
         </div>
     )
 }
