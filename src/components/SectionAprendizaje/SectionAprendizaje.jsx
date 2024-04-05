@@ -18,8 +18,8 @@ function SectionAprendizaje() {
         gsap.from(`.${styles.aprendizajeTitulo}`, { scale: 0, duration: 1, scrollTrigger: { trigger: `.${styles.aprendizajeTitulo}`, start: 'top 80%' } })
         gsap.from('.martes', { scale: 0, duration: 1, scrollTrigger: { trigger: '.martes', start: 'top 80%' } })
         gsap.from('.jueves', {scale: 0, duration: 1, scrollTrigger: { trigger: '.jueves', start: 'top 80%' } })
-        gsap.from('.erlenmeyer', { y: '100%', opacity: 0, duration: 2, scrollTrigger: { trigger: '.erlenmeyer', start: 'top 80%' } })
-        gsap.from('.recomendacion', { opacity: 0, y: '100px', duration: 1, scrollTrigger: { trigger: '.recomendacion', start: 'top 80%' } })
+        gsap.from(`.${styles.erlenmeyer}`, { y: '20px', opacity: 0, duration: 2, scrollTrigger: { trigger: `.${styles.erlenmeyer}`, start: 'top 80%' } })
+        gsap.from(`.${styles.recomendacion}`, { opacity: 0, y: '100px', duration: 1, scrollTrigger: { trigger: `.${styles.recomendacion}`, start: 'top 80%' } })
 
     }, { scope: sectionAprendizaje });
 

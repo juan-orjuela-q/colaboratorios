@@ -13,7 +13,7 @@ function Atom() {
             start: 'top center-=150px',
             end: '+=1000vh',
             scrub: 1,
-            markers: true,
+            //markers: true,
             pin: true,
             toggleActions: 'play none none none'
         

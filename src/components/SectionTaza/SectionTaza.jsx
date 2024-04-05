@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Flotante from '../Flotante/Flotante';
 import Inscripcion from '../Inscripcion/Inscripcion';
+import Chile from '../Chile/Chile';
 
 //import Naranja from '../Naranja/Naranja';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -17,7 +18,7 @@ function SectionTaza() {
         <div className={styles.sectionTaza} ref={sectionTaza}>
             <header className={`${styles.header} container`}>
                 <img className={styles.tazaTitulo} src="/taza/futuroTaza.svg" alt="El futuro en una taza" />
-                {/* <Naranja /> */}
+                <Chile />
                 <Flotante tipo="Molecula2" estilos={{ top: '-220px', left: '50%', width: '160px' }} />
             </header>
             <div className={`${styles.inscripciones} container`}>

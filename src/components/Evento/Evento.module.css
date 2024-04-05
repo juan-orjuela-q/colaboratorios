@@ -11,6 +11,7 @@
     text-transform: uppercase;
     line-height: 1;
     margin: 0;
+    white-space: nowrap;
 }
 .evento :global(.descripcion) {
     font-size: 20px;

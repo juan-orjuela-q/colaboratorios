@@ -18,10 +18,13 @@ function Evento({ hora, titulo, descripcion, enlace }) {
             }
         });
 
-        tl.from('.hora', { text: ' ', duration: 1 })
-        tl.from('h3', { text: ' ', duration: 1 }, '<0.5')
+        tl.from('.hora', { text: '.', duration: 1 })
+        tl.from('h3', { text: '_', duration: 1 }, '<0.5')
         tl.from('.descripcion', { opacity: 0, y: '100px', duration: 1 }, '<0.5')
-        tl.to('.btn', { opacity: 1, duration: 1, delay: 1 }, '<')
+
+        if (enlace) {
+            tl.to('.btn', { opacity: 1, duration: 1, delay: 1 }, '<')
+        }
 
     }, { scope: evento })
 

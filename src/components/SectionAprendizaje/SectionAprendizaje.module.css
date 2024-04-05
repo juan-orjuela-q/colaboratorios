@@ -37,6 +37,11 @@
     width: 302px;
     margin-bottom: 48px;
 }
+.col2 h3 {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
 .recomendacion {
     text-align: center;
     margin-top: 80px;
