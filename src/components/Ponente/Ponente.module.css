@@ -1,0 +1,41 @@
+.ponente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ponente h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 24px 0;
+    position: relative;
+}
+.ponente p {
+    text-align: center;
+}
+.thumb {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 100%;
+}
+.thumb div {
+    overflow: hidden;
+    border-radius: 100%;
+    border: 12px solid rgb(255, 255, 255);
+    position: relative;
+    width: 260px;
+    height: 260px;
+    box-sizing: border-box;
+    
+}
+.thumb div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}

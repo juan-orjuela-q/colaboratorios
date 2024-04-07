@@ -1,0 +1,80 @@
+.sectionCiencia {
+    background: #24265C;
+    margin-top: -20px;
+    
+    position: relative;
+}
+
+.cienciaTitulo {
+    width: 547px;
+}
+
+.header {
+    position: relative;
+    z-index: 3;
+}
+
+.header img {
+    width: 547px;
+}
+
+.header p {
+    width: 547px;
+    margin-top: 20px;
+}
+
+.probeta {
+    width: 460px;
+    height: 765px;
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.ponentes {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 350px !important;
+}
+
+.col1,
+.col2 {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+}
+.ponentes .col1 {
+    margin-top: 100px;
+}
+.ponentes .col2 {
+    margin-top: -100px;
+}
+.triangulo {
+    position: absolute;
+    width: 520px;
+    /* height: 649px; */
+    top: 62px;
+    left: 50%;
+    margin-left: -239px;
+    transform: rotate(9deg);
+}
+.flecha {
+    position: relative;
+    width: 128px;
+    right: -35%;
+
+}
+.reto {
+    margin-top: 100px !important;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.reto .col1 img {
+    width: 350px;
+}
