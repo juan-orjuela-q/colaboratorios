@@ -32,7 +32,7 @@ function SectionTaza() {
                         <strong>la mirada de personas que se están atreviendo a experimentar.</strong>
                     </p>
                     <img src="/taza/cupos.svg" alt="Inscríbete pronto hay 50 cupos para cada taza" />
-                    <Inscripcion numero="1" img="dummy_thumb.webp" titulo="Nombre del video" enlace="#" />
+                    <Inscripcion numero="1" img="/taza/dummy_thumb.webp" titulo="Nombre del video" enlace="#" />
                     <div className={styles.experimentaccion}>
                         <img src="/taza/experimentaccion.svg" alt="Experimentacción" />
                         <p className="bold">
@@ -44,8 +44,8 @@ function SectionTaza() {
 
                 </div>
                 <div className={styles.col2}>
-                    <Inscripcion numero="2" img="dummy_thumb.webp" titulo="Nombre del video" enlace="#" />
-                    <Inscripcion numero="3" img="dummy_thumb.webp" titulo="Nombre del video" enlace="#" />
+                    <Inscripcion numero="2" img="/taza/dummy_thumb.webp" titulo="Nombre del video" enlace="#" />
+                    <Inscripcion numero="3" img="/taza/dummy_thumb.webp" titulo="Nombre del video" enlace="#" />
                     <Flotante tipo="Cono" estilos={{ position: 'relative', right: '-50%', top: '-30px', width: '150px' }} />
                 </div>
                 <div className={styles.probeta}>

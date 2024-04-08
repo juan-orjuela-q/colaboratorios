@@ -68,7 +68,7 @@ strong {
 }
 .separador {
   width: 100%;
-  margin: -120px 0 0;
+  margin: -120px 0 -8px;
 }
 .noise {
   background-image: url(/noise.gif);

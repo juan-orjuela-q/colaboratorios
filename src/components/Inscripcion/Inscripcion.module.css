@@ -5,10 +5,12 @@
     justify-content: center;
     margin: 50px 0;
 }
-.inscripcion > img {
+.numero{
     width: 40px;
     margin-bottom: 60px;
 }
+
+
 .thumb {
     max-width: 330px;
     border-radius: 60px;
@@ -91,4 +93,22 @@
 }
 .inscripcion a:hover {
     box-shadow: 0 0 0 16px white;
+}
+.fecha {
+    width: 260px!important;
+    margin-bottom: 70px;
+}
+:global([class*="reto"]) .inscripcion  a{
+    margin-top: 14px;
+    background: #747FC1;
+    position: relative;
+}
+:global([class*="reto"]) .inscripcion a:before {
+    content: '';
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    width: 2px;
+    height: 48px;
+    background: white;
 }

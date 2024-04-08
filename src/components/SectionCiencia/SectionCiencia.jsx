@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Ponente from '../Ponente/Ponente';
 import Flotante from '../Flotante/Flotante';
+import Inscripcion from '../Inscripcion/Inscripcion';
 //import Flotante from '../Flotante/Flotante';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -67,9 +68,16 @@ function SectionCiencia() {
                     <img src="/ciencia/reto.svg" alt="" />
                     <p>Es momento de poner a prueba las hipótesis, hacer uso de todo instrumento y <strong>activar la mente creativa.</strong><br/><br/>
                         Incríbete tenemos <strong>200 cupos</strong> para cada reto.</p>
+                    <Inscripcion fecha="/ciencia/martesReto.svg" img="/ciencia/dummy_reto.webp" enlace="#" />
+                    <Flotante tipo="Cubo" estilos={{ bottom: '-160px', left: '20px', width: '120px' }} />
                 </div>
-                <div className={styles.col2}></div>
+                <div className={styles.col2}>
+                    <Inscripcion fecha="/ciencia/juevesReto.svg" img="/ciencia/dummy_reto.webp" enlace="#" />
+                    <Flotante tipo="Cono" estilos={{ bottom: '160px', right: '20px', width: '120px' }} />
+                    <Flotante tipo="Molecula2" estilos={{ bottom: '0', right: '90%', width: '120px' }} />
+                </div>
             </div>
+        <img className='separador' src="/ciencia/separador3.svg" alt="" />
         </div>
     )
 }

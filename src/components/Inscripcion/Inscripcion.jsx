@@ -1,15 +1,17 @@
 import styles from './Inscripcion.module.css'
 
-function Inscripcion({numero, img, titulo, enlace}) {
+function Inscripcion({numero, img, titulo, enlace, fecha}) {
     return (
         <div className={styles.inscripcion}>
-            <img src={`/intro/num${numero}.svg`} alt={numero} />
+            {numero && <img className={styles.numero} src={`/intro/num${numero}.svg`} alt={numero} />}
+            {fecha && <img className={styles.fecha} src={fecha} alt="Fecha"/>}
             <div className={styles.thumb}>
                 <div>
-                    <img src={`/taza/${img}`} alt={titulo} />
+                    <img src={img} alt={titulo} />
                 </div>
             </div>
-            <h3>{titulo}</h3>
+            {titulo && <h3>{titulo}</h3>}
+            
             <a href={enlace}>INSCRÍBETE<br/> <strong>AQUÍ</strong></a>
         </div>
     )
