@@ -11,11 +11,8 @@ function Manzana() {
 
     useGSAP(() => {
         gsap.to(`.${styles.frames}`, {
-            rotation: 50, transformOrigin: "79% 90%", duration: 1, scrollTrigger: {
-                trigger: `.${styles.frames}`, start: 'top 70%', end: 'top 100px', scrub: 1, markers: {
-                    startColor: "yellow",
-                    endColor: "yellow"
-                }
+            x: 150, y: -150, /*transformOrigin: "79% 90%",*/ duration: 1, scrollTrigger: {
+                trigger: `.${styles.frames}`, start: 'top 70%', end: 'bottom 100px', scrub: 1
             }
         })
     }, { scope: manzana });

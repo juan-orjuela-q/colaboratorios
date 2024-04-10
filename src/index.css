@@ -9,6 +9,7 @@
   color: white;
   background-color: #41316D;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 #root {
   width: calc(100vw -10px);
@@ -68,7 +69,9 @@ strong {
 }
 .separador {
   width: 100%;
-  margin: -120px 0 -8px;
+  /*margin: -120px 0 -8px;*/
+  margin: 0;
+  display: block;
 }
 .noise {
   background-image: url(/noise.gif);

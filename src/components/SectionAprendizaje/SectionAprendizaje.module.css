@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    min-height: 1420px;
+    min-height: 1200px;
 }
 .col1, .col2 {
     width: 40%;
@@ -44,7 +44,7 @@
 }
 .recomendacion {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0;
 }
 .erlenmeyer {
     width: 535px;

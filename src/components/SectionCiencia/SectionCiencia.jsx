@@ -15,6 +15,15 @@ function SectionCiencia() {
 
     const sectionCiencia = useRef()
 
+    useGSAP(() => {
+        gsap.from(`.${styles.cienciaTitulo}`, { opacity: 0, duration: 1, scrollTrigger: { trigger: `.${styles.cienciaTitulo}`, start: 'top 80%' } })
+        gsap.from('.bold', { opacity: 0, duration: 1, scrollTrigger: { trigger: '.bold', start: 'top 80%' } })
+        gsap.from('.imgReto', { scale: 0, duration: 1, scrollTrigger: { trigger: '.imgReto', start: 'top 80%' } })
+        gsap.from('.descReto', { opacity: 0, duration: 1, scrollTrigger: { trigger: '.descReto', start: 'top 80%' } })
+        
+
+    }, { scope: sectionCiencia });
+
     return (
         <div className={styles.sectionCiencia} ref={sectionCiencia}>
             <header className={`${styles.header} container`}>
@@ -63,10 +72,10 @@ function SectionCiencia() {
                 <img src="/ciencia/triangulo.svg" alt="" className={styles.triangulo} />
                 <Flotante tipo="Cubo" estilos={{ top: '120px', left: '50%', marginLeft: '-40px', width: '120px' }} />
             </div>
-            <div className={`${styles.reto} container`}>
+            <div id="seccionRetos" className={`${styles.reto} container`}>
                 <div className={styles.col1}>
-                    <img src="/ciencia/reto.svg" alt="" />
-                    <p>Es momento de poner a prueba las hipótesis, hacer uso de todo instrumento y <strong>activar la mente creativa.</strong><br/><br/>
+                    <img className='imgReto' src="/ciencia/reto.svg" alt="" />
+                    <p className='descReto'>Es momento de poner a prueba las hipótesis, hacer uso de todo instrumento y <strong>activar la mente creativa.</strong><br/><br/>
                         Incríbete tenemos <strong>200 cupos</strong> para cada reto.</p>
                     <Inscripcion fecha="/ciencia/martesReto.svg" img="/ciencia/dummy_reto.webp" enlace="#" />
                     <Flotante tipo="Cubo" estilos={{ bottom: '-160px', left: '20px', width: '120px' }} />

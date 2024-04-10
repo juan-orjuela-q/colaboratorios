@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(useGSAP, ScrollTrigger, TextPlugin);
 
-function Evento({ hora, titulo, descripcion, enlace }) {
+function Evento({ hora, titulo, descripcion, enlace, label }) {
     const evento = useRef()
 
     useGSAP(() => {
@@ -33,7 +33,7 @@ function Evento({ hora, titulo, descripcion, enlace }) {
             <p className="hora">{hora}</p>
             <h3>{titulo}</h3>
             <p className="descripcion">{descripcion}</p>
-            {enlace && <a href={enlace} className='btn btnZoom'>zoom</a>}
+            {enlace && <a href={enlace} target={enlace.includes('http') ? '_blank' : ''} className='btn btnZoom'>{label}</a>}
         </div>
     )
 }

@@ -1,32 +1,31 @@
 import { useRef, useEffect } from 'react'
 import styles from './SectionIntro.module.css'
+import { useWeb } from '../../context/WebContext'
 //Animation
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-
-
-
-
-function SectionIntro({ isopen, setIsopen }) {
+function SectionIntro() {
     const sectionIntro = useRef()
     const videoLimon = useRef()
 
-    //Reproducir video si isOpen es true, usando useEffect
+    const { isOpen, setIsOpen } = useWeb()
+
+    
     useEffect(() => {
-        if (isopen) {
+        if (isOpen) {
             videoLimon.current.play()
             sectionIntro.current.classList.add(styles.open)
         }
-    }, [isopen])
+    }, [isOpen])
 
 
     function handleClick() {
-        setIsopen(true)
-
+        setIsOpen(true)
     }
+
     //Animación
     useGSAP(() => {
         //Timeline
@@ -39,10 +38,10 @@ function SectionIntro({ isopen, setIsopen }) {
         tl.from(`.${styles.media} img`, {  y: '50%', scale: 0.6, duration: 1.5 },'<')
         tl.from(`.${styles.media} video`, {  opacity: 0, duration: 1.5 },'<1.5')
         tl.from(`.${styles.logoImagix}, .${styles.info} img, .${styles.info} p`, { opacity: 0, duration: 1, stagger: 0.25 }, '<0.75')
-        tl.to('.btn', { opacity: 1, duration: 1, delay:1 }, '<')
-        
+        tl.to('.btn', { opacity: 1, duration: 1, delay: 1 }, '<')
 
     }, { scope: sectionIntro });
+
     return (
         <>
             <div className={styles.sectionIntro} ref={sectionIntro}>
@@ -68,8 +67,8 @@ function SectionIntro({ isopen, setIsopen }) {
                         <div className={styles.cortina22}></div>
                     </div>
                 </div>
-                {!isopen && <button className={`btn ${styles.boton}`} onClick={handleClick}>EMPEZAR</button>}
-                {isopen && <Objetivos />}
+                {!isOpen && <button className={`btn ${styles.boton}`} onClick={handleClick}>EMPEZAR</button>}
+                {isOpen && <Objetivos />}
             </div>
             
         </>

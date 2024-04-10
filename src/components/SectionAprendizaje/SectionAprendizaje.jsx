@@ -15,9 +15,9 @@ function SectionAprendizaje() {
     const sectionAprendizaje = useRef()
 
     useGSAP(() => {
-        gsap.from(`.${styles.aprendizajeTitulo}`, { scale: 0, duration: 1, scrollTrigger: { trigger: `.${styles.aprendizajeTitulo}`, start: 'top 80%' } })
-        gsap.from('.martes', { scale: 0, duration: 1, scrollTrigger: { trigger: '.martes', start: 'top 80%' } })
-        gsap.from('.jueves', {scale: 0, duration: 1, scrollTrigger: { trigger: '.jueves', start: 'top 80%' } })
+        gsap.from(`.${styles.aprendizajeTitulo}`, { opacity: 0, duration: 1, scrollTrigger: { trigger: `.${styles.aprendizajeTitulo}`, start: 'top 80%' } })
+        gsap.from('.martes', { opacity: 0, duration: 1, scrollTrigger: { trigger: '.martes', start: 'top 80%' } })
+        gsap.from('.jueves', { opacity: 0, duration: 1, scrollTrigger: { trigger: '.jueves', start: 'top 80%' } })
         gsap.from(`.${styles.erlenmeyer}`, { y: '20px', opacity: 0, duration: 2, scrollTrigger: { trigger: `.${styles.erlenmeyer}`, start: 'top 80%' } })
         gsap.from(`.${styles.recomendacion}`, { opacity: 0, y: '100px', duration: 1, scrollTrigger: { trigger: `.${styles.recomendacion}`, start: 'top 80%' } })
 
@@ -36,69 +36,53 @@ function SectionAprendizaje() {
                 <div className={styles.col1}>
                     <img className='martes' src="/aprendizaje/martes.svg" alt="" />
                     <Evento
-                        hora="8:00 am"
-                        titulo="APERTURA DEL ENCUENTRO"
-                        descripcion="Vamos a ingresar juntos al colaboratorio y a preparar nuestra mente para ver posibilidades."
-                        enlace="#" />
+                        hora="8:00am - 10:20am"
+                        titulo="HERRAMIENTAS Y RETO ALKIM-IA"
+                        descripcion="Desarrolla tu creatividad aumentada conociendo y experimentando con herramientas de Inteligencia Artificial"
+                        enlace="#seccionRetos"
+                        label="Acceso con inscripción previa" />
                     <Evento
-                        hora="8:30 am"
+                        hora="10:30 am - 11:30am"
                         titulo="EL FUTURO EN UNA TAZA"
-                        descripcion="Observar cuidadosamente 
-                        fenómenos, comportamientos 
-                        o características futuras." />
+                        descripcion="Conversaciones con expertos para analizar fenómenos y comportamientos futuros."
+                        enlace="#seccionTaza"
+                        label="Acceso con inscripción previa" />
                     <Evento
-                        hora="9:30 am"
-                        titulo="HERRAMIENTAS ALKIM-IA"
-                        descripcion="Conocer herramientas 
-                        de inteligencia artificial."
-                        enlace="#" />
-                    <Evento
-                        hora="9:30 am"
-                        titulo="RETO ALKIM-IA"
-                        descripcion="Disponer de herramientas 
-                        con inteligencia artificial 
-                        para su uso en experimentos
-                        creativos." />
-                    <Evento
-                        hora="4:00 pm"
+                        hora="4:00pm - 5:00pm"
                         titulo="RECONOCIMIENTOS"
-                        descripcion="Validar la precisión y 
-                        confiabilidad de los 
-                        resultados experimentales."
-                        enlace="#" />
+                        descripcion="Un tiempo para honrar los científicos creativos que hacen posibles y confiables los resultados experimentales."
+                        enlace="#"
+                        label="Acceso general al Colaboratorio" />
                 </div>
                 <div className={styles.col2}>
                     <img className='jueves' src="/aprendizaje/jueves.svg" alt="" />
                     <Evento
-                        hora="9:00 am"
+                        hora="8:00am - 10:20am"
+                        titulo="HERRAMIENTAS Y RETO DE SIMPLICIDAD"
+                        descripcion="Examinar nuevas y frescas herramientas para abordar los retos de manera simple."
+                        enlace="#seccionRetos"
+                        label="Acceso con inscripción previa" />
+                    <Evento
+                        hora="10:30am - 12:00"
                         titulo="LA CIENCIA DE LA CREATIVIDAD"
-                        descripcion="Combinar sustancias del arte para agregar a tus sesiones creativas."
-                        enlace="#" />
-                    <Evento
-                        hora="11:00 am"
-                        titulo="HERRAMIENTAS DE SIMPLICIDAD"
-                        descripcion="Examinar detalladamente, 
-                        frescas y nuevas herramientas
-                         para abordar los retos 
-                        de manera simple."
-                        enlace="#" />
-                    <Evento
-                        hora="2:00 pm"
-                        titulo="RETO  SIMPLE"
-                        descripcion="Realizar pruebas controladas
-                        para poner a prueba
-                        los retos de simplicidad. " />
+                        descripcion="Conoce sustancias del arte para combinar en tus sesiones creativas."
+                        enlace="#"
+                        label="Acceso general al Colaboratorio" />
+
                     <Flotante tipo="Molecula" estilos={{ right: '-160px', bottom: '-30px', width: '100px', position: 'relative' }} />
-                    <p className={styles.recomendacion}>Es importante fomentar un
-                        ambiente <strong>ABIERTO, INCLUSIVO
-                        Y CREATIVO</strong> durante todo
-                        el proceso experimental</p>
+                    
                 </div>
                 <div className={styles.erlenmeyer}>
                     <img src="/aprendizaje/erlenmeyer.webp" alt="" />
                 </div>
+                
             </div>
-        <img className='separador' src="/aprendizaje/separador1.svg" alt="" />
+            <p className={styles.recomendacion}>Todos los experimentos en<br />
+                        nuestro Colaboratorio están pensados<br />
+                        para darte <strong>herramientas creativas</strong>,<br />
+                        no pierdas la oportunidad de<br />
+                        <strong>nutrir y expandir tu mente.</strong></p>
+            <img className='separador' src="/aprendizaje/separador1.svg" alt="" />
         </div>
     )
 }

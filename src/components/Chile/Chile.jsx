@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-function Chile() {
+function Chile({isopen}) {
     const chile = useRef()
 
     let frameCount = 5,
@@ -34,7 +34,7 @@ function Chile() {
             let img = new Image();
             img.src = url;
             i || (img.onload = updateImage);
-            console.log(img)
+            //console.log(img)
             return img;
         });
         return gsap.to(playhead, {
@@ -47,29 +47,23 @@ function Chile() {
         });
     }
 
-    //
-    
-
       useGSAP(() => {
+        console.log("chile", isopen);
         imageSequence({
             urls,
             canvas: '.chileAnim',
             clear: true, 
             //onUpdate: (index, image) => console.log("drew image index", index, ", image:", image),
             scrollTrigger: {
-              //start: '20% center',   
-              //end: '+=600',
-              trigger: chile.current, 
-              scrub: 1,
-              markers: {
-                indent: 150,
-                startColor: "white",
-                endColor: "white"
-              },
+              start: 'top center',   
+              end: 'bottom center',
+              trigger: '.chileAnim', 
+              scrub: 1             
             }
           });
-      }, { scope: chile });
+    }, { scope: chile});
 
+     
     return (
         <div className={styles.chile} ref={chile}>
             <canvas className={`chileAnim ${styles.frames}`} width='460px' height='460px' />

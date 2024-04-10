@@ -1,4 +1,11 @@
 .inscripcion {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;*/
+}
+.inscripcion :global(.contenedor) {
     display: flex;
     flex-direction: column;
     align-items: center;

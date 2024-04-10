@@ -11,8 +11,9 @@ function Atom() {
         ScrollTrigger.create({
             trigger: '.atomAnim',
             start: 'top center-=150px',
-            end: '+=1000vh',
-            scrub: 1,
+            end: 'top center-=250px',
+            endTrigger: ".finalAtom",
+            scrub: 2,
             //markers: true,
             pin: true,
             toggleActions: 'play none none none'
