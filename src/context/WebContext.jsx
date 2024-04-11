@@ -8,6 +8,8 @@ const WebContext = createContext();
 
 function WebProvider({ children }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [videoID, setVideoID] = useState('');
     
 
     useEffect(() => {
@@ -20,6 +22,10 @@ function WebProvider({ children }) {
     return <WebContext.Provider value={{
         isOpen,
         setIsOpen,
+        isModalOpen,
+        setIsModalOpen,
+        videoID,
+        setVideoID
     }}>{children}</WebContext.Provider>;
 }
 

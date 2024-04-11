@@ -42,9 +42,27 @@
     display: flex;
     justify-content: flex-end;
 }
+.recomendacionContainer {
+    max-width: 500px;
+    margin:  0 auto;
+    position: relative;
+}
 .recomendacion {
     text-align: center;
     margin-top: 0;
+}
+.recomendacionContainer img {
+    width: 50px;
+    position: absolute;
+}
+.recomendacionContainer :global(.comilla1) {
+    left: 0;
+    top: -28px;
+}
+.recomendacionContainer :global(.comilla2) {
+    right: -20px;
+    bottom: -20px;
+    transform: rotate(180deg);
 }
 .erlenmeyer {
     width: 535px;

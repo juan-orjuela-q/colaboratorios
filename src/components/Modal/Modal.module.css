@@ -1,0 +1,45 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+
+    /* Estilos para el video */
+    iframe {
+        width: 70vw;
+        height: 70vh;
+        border: none;
+    }
+
+    /* Estilos para el botón de cerrar */
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        z-index: 1001; /* Asegura que esté por encima del overlay */
+    }
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

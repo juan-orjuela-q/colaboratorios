@@ -2,10 +2,10 @@
     position:absolute;
     width: 550px;
     height: 550px;
-    right: 240px;
+    right: 150px;
     background: url('/manzana/base.webp') no-repeat center;
     background-size: contain;
-    top: -160px;
+    top: -120px;
     z-index: 1;
 }
 .frames {

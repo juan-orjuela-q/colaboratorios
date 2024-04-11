@@ -50,6 +50,8 @@
 .final :global(.fruta) {
     position: absolute;
     bottom: 9vw;
+    cursor: pointer;
+    z-index: 2;
 }
 .final :global(.fruta) img {
     position: relative;
@@ -71,6 +73,12 @@
 .manzana {
     right: 6vw;
 }
+.probeta1 {
+    right: 23vw;
+}
+.probeta2 {
+    right: 37vw;
+}
 .chile img{
     width: 12vw;
 }
@@ -79,6 +87,12 @@
 }
 .manzana img{
     width: 15vw;
+}
+.probeta1 img{
+    width: 12vw;
+}
+.probeta2 img{
+    width: 11vw;
 }
 .final :global(.fruta)::before {
     content: '';

@@ -1,0 +1,82 @@
+.tooltip {
+    width: 360px;
+    padding: 32px 20px;
+    border-radius: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: -8px 8px 0 0 #ffffff6b;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 3;
+    display: none;
+    
+}
+.tooltip p {
+    font-size: 16px;
+}
+.tooltip h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 0 16px;
+}
+.tooltip h4 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #AACE3D;
+    margin: 0 0 12px;
+}
+.tooltip a {
+    text-decoration: none;
+    color: white;
+}
+.tooltip a:hover {
+    text-decoration: underline;
+
+}
+:global(.estilo1) {
+    background: #24265C;
+}
+:global(.estilo2) {
+    background: #D41367;
+}
+:global(.estilo3) {
+    background: #26AAE1;
+}
+:global(.estilo4) {
+    background: #AACE3D;
+}
+:global(.estilo5) {
+    background: #573C92;
+}
+
+:global(.estilo1) h3 {
+    color: #26AAE1;
+}
+:global(.estilo2) h3 {
+    color: #24265C;
+}
+:global(.estilo3) h3 {
+    color: #573C92;
+}
+:global(.estilo4) h3 {
+    color: #24265C;
+}
+:global(.estilo5) h3 {
+    color: #26AAE1;
+}
+
+:global(.estilo3) h4 {
+    color: #D41367;
+}
+:global(.estilo4) h4 {
+    color: #24265C;
+}
+:global(.fruta):hover {
+    z-index: 4;
+}
+:global(.fruta):hover .tooltip {
+    display: block;
+}

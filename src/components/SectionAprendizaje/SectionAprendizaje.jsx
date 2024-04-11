@@ -70,18 +70,22 @@ function SectionAprendizaje() {
                         label="Acceso general al Colaboratorio" />
 
                     <Flotante tipo="Molecula" estilos={{ right: '-160px', bottom: '-30px', width: '100px', position: 'relative' }} />
-                    
+
                 </div>
                 <div className={styles.erlenmeyer}>
                     <img src="/aprendizaje/erlenmeyer.webp" alt="" />
                 </div>
-                
+
             </div>
-            <p className={styles.recomendacion}>Todos los experimentos en<br />
-                        nuestro Colaboratorio están pensados<br />
-                        para darte <strong>herramientas creativas</strong>,<br />
-                        no pierdas la oportunidad de<br />
-                        <strong>nutrir y expandir tu mente.</strong></p>
+            <div className={styles.recomendacionContainer}>
+                <img src="/aprendizaje/comillas.svg" alt="" className="comilla comilla1" />
+                <p className={styles.recomendacion}>Todos los experimentos en<br />
+                    nuestro Colaboratorio están pensados<br />
+                    para darte <strong>herramientas creativas</strong>,<br />
+                    no pierdas la oportunidad de<br />
+                    <strong>nutrir y expandir tu mente.</strong></p>
+                    <img src="/aprendizaje/comillas.svg" alt="" className="comilla comilla2" />
+            </div>
             <img className='separador' src="/aprendizaje/separador1.svg" alt="" />
         </div>
     )

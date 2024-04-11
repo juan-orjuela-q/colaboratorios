@@ -41,8 +41,8 @@
     position: relative;
 }
 .manzana > img {
-    width: 270px;
+    width: 240px;
     position: absolute;
-    top:  -160px;
+    top:  10px;
     left: 0;
 }
