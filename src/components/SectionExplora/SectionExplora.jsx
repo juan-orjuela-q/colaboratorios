@@ -45,7 +45,7 @@ function SectionExplora() {
                 <div className={`fruta ${styles.limon}`}>
                     <img src="./explora/limon.png" alt="Limón" />
                     <Tooltip
-                        titulo="Fooduristic 2023"
+                        titulo="Fooduristic 2024"
                         descripcion="Contiene las tendencias, las reflexiones y las buenas prácticas de los protagonistas de 
                         las soluciones a los desafíos del sector alimentario en ámbitos como la sostenibilidad, 
                         la salud y el bienestar."

@@ -1,26 +1,30 @@
 import styles from './Audio.module.css'
-import { useState, useRef, useEffect } from 'react'
+import { useWeb } from '../../context/WebContext'
+import { useRef, useEffect } from 'react'
 
 function Audio() {
-    const [isPlaying, setIsPlaying] = useState(true)
+    //const [isPlaying, setIsPlaying] = useState(true)
+    const { isSoundOn, setIsSoundOn } = useWeb()
+    
     const audio = useRef()
 
     function handleClick() {
-        setIsPlaying(!isPlaying)
+        setIsSoundOn(!isSoundOn)
 
     }
     useEffect(() => {
-        if (isPlaying) {
+        if (isSoundOn) {
             audio.current.play()
         } else {
             audio.current.pause()
         }
-    }, [isPlaying])
+    }, [isSoundOn])
 
     return (
         <div className={styles.audioBoton} onClick={handleClick}>
-            <audio ref={audio} src="./audio/bubbles.mp3" loop autoPlay={isPlaying}></audio>
-            <img src={isPlaying ? "./audio/audioOn.svg" : "./audio/audioOff.svg"} alt="Audio" />
+            <audio ref={audio} src="./audio/laboratorio.mp3" loop autoPlay={isSoundOn}></audio>
+            {isSoundOn ? <img className={styles.on} src="./audio/soundOn.gif" alt="Audio On" /> : <img className={styles.off} src="./audio/soundOff.svg" alt="Audio Off" />}
+            
         </div>
     )
 }

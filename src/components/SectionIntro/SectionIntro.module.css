@@ -54,7 +54,7 @@
 }
 .media video {
     position: absolute;
-    /*mix-blend-mode: screen;*/
+    border-radius: 100px;
     width: 780px;
     left: 50%;
     margin-left: -390px;

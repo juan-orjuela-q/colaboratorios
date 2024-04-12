@@ -10,6 +10,7 @@ function WebProvider({ children }) {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [videoPath, setVideoPath] = useState('');
+    const [isSoundOn, setIsSoundOn] = useState(true);
     
 
     useEffect(() => {
@@ -31,7 +32,9 @@ function WebProvider({ children }) {
         isModalOpen,
         setIsModalOpen,
         videoPath,
-        setVideoPath
+        setVideoPath,
+        isSoundOn,
+        setIsSoundOn
     }}>{children}</WebContext.Provider>;
 }
 

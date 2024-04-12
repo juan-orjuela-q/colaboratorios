@@ -51,7 +51,7 @@ function SectionAprendizaje() {
                         hora="4:00pm - 5:00pm"
                         titulo="RECONOCIMIENTOS"
                         descripcion="Un tiempo para honrar los científicos creativos que hacen posibles y confiables los resultados experimentales."
-                        enlace="#"
+                        enlace="https://experienciasayaka.zoom.us/j/85832716236?pwd=bG9vWW9wdmYzalo3M0dxdFdRZzBPdz09"
                         label="Acceso general al Colaboratorio" />
                 </div>
                 <div className={styles.col2}>
@@ -66,7 +66,7 @@ function SectionAprendizaje() {
                         hora="10:30am - 12:00"
                         titulo="LA CIENCIA DE LA CREATIVIDAD"
                         descripcion="Conoce sustancias del arte para combinar en tus sesiones creativas."
-                        enlace="#"
+                        enlace="https://experienciasayaka.zoom.us/j/85832716236?pwd=bG9vWW9wdmYzalo3M0dxdFdRZzBPdz09"
                         label="Acceso general al Colaboratorio" />
 
                     <Flotante tipo="Molecula" estilos={{ right: '-160px', bottom: '-30px', width: '100px', position: 'relative' }} />

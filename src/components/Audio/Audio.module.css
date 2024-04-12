@@ -13,12 +13,19 @@
     animation: entrar 0.5s;
 }
 .audioBoton img {
-    width: 40px;
-    height: 40px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.on {
+    width: 68px;
+    height: 68px;
+}
+.off {
+    width: 40px;
+    height: 40px;
 }
 @keyframes entrar {
     0% {
