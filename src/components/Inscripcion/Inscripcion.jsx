@@ -10,7 +10,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function Inscripcion({ numero, img, titulo, enlace, fecha, videoID = 'dQw4w9WgXcQ' }) {
 
-    const {setIsModalOpen, setVideoID} = useWeb()
+    const {setIsModalOpen, setVideoPath} = useWeb()
 
     const inscripcion = useRef()
     useGSAP(() => {
@@ -19,8 +19,9 @@ function Inscripcion({ numero, img, titulo, enlace, fecha, videoID = 'dQw4w9WgXc
     }, { scope: inscripcion });
 
     function handleClick(videoID) {
+        console.log('Abreee')
         setIsModalOpen(true)
-        setVideoID(videoID)
+        setVideoPath(videoID)
     }
 
     return (

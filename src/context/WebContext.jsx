@@ -9,7 +9,7 @@ const WebContext = createContext();
 function WebProvider({ children }) {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [videoID, setVideoID] = useState('');
+    const [videoPath, setVideoPath] = useState('');
     
 
     useEffect(() => {
@@ -19,13 +19,19 @@ function WebProvider({ children }) {
         
     }, [isOpen]);
 
+    if (isModalOpen) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+
     return <WebContext.Provider value={{
         isOpen,
         setIsOpen,
         isModalOpen,
         setIsModalOpen,
-        videoID,
-        setVideoID
+        videoPath,
+        setVideoPath
     }}>{children}</WebContext.Provider>;
 }
 

@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     background: #573C92 url(/intro/fondo1.svg) no-repeat left bottom;
+    background: #573C92;
     background-size: auto 85vh;
 }
 .logoImagix {
@@ -40,20 +41,23 @@
     margin-left: -100px;
     text-align: center;
     opacity: 0;
+    z-index: 99;
 }
 .media img{
     position: absolute;
-    top: 300px;
+    top: 420px;
     width: 390px;
     margin-left: -195px;
     left: 50%;
+    z-index: 2;
+    transition: top 2.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 .media video {
     position: absolute;
-    mix-blend-mode: screen;
-    width: 1280px;
+    /*mix-blend-mode: screen;*/
+    width: 780px;
     left: 50%;
-    margin-left: -620px;
+    margin-left: -390px;
     top: -110px;
 }
 .cortinas {
@@ -100,6 +104,9 @@
 }
 .sectionIntro.open {
     min-height: max(110vh, 1020px);
+}
+.sectionIntro.open .media img {
+    top: 800px;
 }
 .objetivos {
     position: relative;

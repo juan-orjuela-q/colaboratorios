@@ -58,7 +58,7 @@ function SectionIntro() {
                 </div>
                 <div className={styles.media}>
                     <img src="/intro/pedestal_largo.svg" alt="" />
-                    <video src="/intro/limon.mp4" ref={videoLimon}></video>
+                    <video src="/intro/limonMorado.mp4" ref={videoLimon}></video>
                 </div>
                 <div className={styles.cortinas}>
                     <div className={styles.cortina1}></div>

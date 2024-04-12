@@ -3,38 +3,42 @@ import { useWeb } from '../../context/WebContext';
 import styles from './Modal.module.css';
 
 function Modal() {
-    const { isModalOpen, videoID, setIsModalOpen } = useWeb();
+    const { isModalOpen, videoPath, setIsModalOpen } = useWeb();
+    
     const modalRef = useRef(null);
+    const videoContainerRef = useRef(null);
 
     useEffect(() => {
         const modal = modalRef.current;
+        const videoContainer = videoContainerRef.current;
 
         if (isModalOpen) {
             modal.style.display = 'flex'; // Mostrar el modal al abrirlo
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoID}?autoplay=1`;
-            iframe.frameBorder = '0';
-            iframe.allow = 'autoplay; encrypted-media';
-            modal.appendChild(iframe);
+            const video = document.createElement('video');
+            video.src = videoPath;
+            video.controls = true;
+            video.autoplay = true;
+            videoContainer.appendChild(video);
         } else {
-            modal.style.display = 'none'; // Ocultar el modal al cerrarlo
-            modal.innerHTML = ''; // Limpiar el contenido del modal al cerrarlo
+            videoContainer.style.display = 'none'; // Ocultar el modal al cerrarlo
+            videoContainer.innerHTML = ''; // Limpiar el contenido del modal al cerrarlo
         }
 
         return () => {
-            modal.innerHTML = ''; // Limpiar el contenido del modal al desmontar el componente
+            videoContainer.innerHTML = ''; // Limpiar el contenido del modal al desmontar el componente
         };
-    }, [isModalOpen, videoID]);
+    }, [isModalOpen, videoPath]);
 
     const handleClose = () => {
         setIsModalOpen(false);
     };
 
     return (
-        <div className={styles.modal} ref={modalRef}>
+        <div className={styles.modal}  ref={modalRef}>
+            <button className={`${styles.closeButton} btn`} onClick={handleClose}>Cerrar</button>
             <div className={styles.modalContent}>
-                <button className={styles.closeButton} onClick={handleClose}>Cerrar</button>
-                <div className={styles.videoContainer}>
+                
+                <div className={styles.videoContainer}  ref={videoContainerRef}>
                     {/* El video se insertará aquí dinámicamente */}
                 </div>
             </div>

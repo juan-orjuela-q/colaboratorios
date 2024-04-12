@@ -7,7 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Ponente from '../Ponente/Ponente';
 import Flotante from '../Flotante/Flotante';
 import Inscripcion from '../Inscripcion/Inscripcion';
-//import Flotante from '../Flotante/Flotante';
+//import PuzzleGame from '../PuzzleGame/PuzzleGame';
+
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -30,6 +31,7 @@ function SectionCiencia() {
                 <img className={styles.cienciaTitulo} src="/ciencia/creatividad.svg" alt="La ciencia de la creatividad" />
                 <p className='bold'>Combinar sustancias del arte para agregar a tus <strong>sesiones creativas.</strong></p>
             </header>
+            {/* <PuzzleGame /> */}
             <div className={`${styles.ponentes} container`}>
                 <div className={styles.col1}>
                     <Ponente
