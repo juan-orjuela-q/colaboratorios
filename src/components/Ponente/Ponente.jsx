@@ -18,13 +18,14 @@ function Ponente({ img, titulo, descripcion }) {
     return (
         <div className={styles.ponente} ref={ponente}>
             <div className='contenedor'>
-                <h3>{titulo}</h3>
+                {titulo && <h3>{titulo}</h3>}
                 <div className={styles.thumb}>
                     <div>
                         <img src={`./ciencia/${img}`} alt={titulo} />
                     </div>
                 </div>
-                <p>{descripcion}</p>
+                {descripcion && <p>{descripcion}</p>}
+                
             </div>
 
         </div>

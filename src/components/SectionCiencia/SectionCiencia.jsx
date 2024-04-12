@@ -21,7 +21,7 @@ function SectionCiencia() {
         gsap.from('.bold', { opacity: 0, duration: 1, scrollTrigger: { trigger: '.bold', start: 'top 80%' } })
         gsap.from('.imgReto', { scale: 0, duration: 1, scrollTrigger: { trigger: '.imgReto', start: 'top 80%' } })
         gsap.from('.descReto', { opacity: 0, duration: 1, scrollTrigger: { trigger: '.descReto', start: 'top 80%' } })
-        
+
 
     }, { scope: sectionCiencia });
 
@@ -35,13 +35,7 @@ function SectionCiencia() {
             <div className={`${styles.ponentes} container`}>
                 <div className={styles.col1}>
                     <Ponente
-                        img="dummy_ponente.webp"
-                        titulo="Sandra Sánchez"
-                        descripcion="La ciencia de la 
-                            espontaneidad:
-                            Técnicas para fluir 
-                            creativamente durante facilitaciones 
-                            complejas." />
+                        img="cienciaAzul.png" />
                     <img className={styles.flecha} src="./ciencia/flecha_1.svg" alt="Flecha" />
 
                     <h2>¡UN ENCUENTRO<br /> PARA TODOS!</h2>
@@ -51,21 +45,9 @@ function SectionCiencia() {
                 </div>
                 <div className={styles.col2}>
                     <Ponente
-                        img="dummy_ponente.webp"
-                        titulo="Sandra Sánchez"
-                        descripcion="La ciencia de la 
-                            espontaneidad:
-                            Técnicas para fluir 
-                            creativamente durante facilitaciones 
-                            complejas." />
+                        img="cienciaVerde.png" />
                     <Ponente
-                        img="dummy_ponente.webp"
-                        titulo="Sandra Sánchez"
-                        descripcion="La ciencia de la 
-                            espontaneidad:
-                            Técnicas para fluir 
-                            creativamente durante facilitaciones 
-                            complejas." />
+                        img="cienciaMagenta.png" />
                     <Flotante tipo="Molecula" estilos={{ bottom: '-190px', right: '20px', width: '90px' }} />
                 </div>
                 <div className={styles.probeta}>
@@ -77,18 +59,18 @@ function SectionCiencia() {
             <div id="seccionRetos" className={`${styles.reto} container`}>
                 <div className={styles.col1}>
                     <img className='imgReto' src="./ciencia/reto.svg" alt="" />
-                    <p className='descReto'>Es momento de poner a prueba las hipótesis, hacer uso de todo instrumento y <strong>activar la mente creativa.</strong><br/><br/>
+                    <p className='descReto'>Es momento de poner a prueba las hipótesis, hacer uso de todo instrumento y <strong>activar la mente creativa.</strong><br /><br />
                         Incríbete tenemos <strong>200 cupos</strong> para cada reto.</p>
-                    <Inscripcion fecha="./ciencia/martesReto.svg" img="./ciencia/dummy_reto.webp" enlace="https://calendly.com/paula-yji/alkimia" videoID='./videos/retoMartes.mp4'/>
+                    <Inscripcion fecha="./ciencia/martesReto.svg" img="./ciencia/thumbRetoMartes.webp" enlace="https://calendly.com/paula-yji/alkimia" videoID='./videos/retoMartes.mp4' />
                     <Flotante tipo="Cubo" estilos={{ bottom: '-160px', left: '20px', width: '120px' }} />
                 </div>
                 <div className={styles.col2}>
-                    <Inscripcion fecha="./ciencia/juevesReto.svg" img="./ciencia/dummy_reto.webp" enlace="https://calendly.com/paula-yji/simplicidad"  videoID='./videos/retoJueves.mp4'/>
+                    <Inscripcion fecha="./ciencia/juevesReto.svg" img="./ciencia/thumbRetoJueves.webp" enlace="https://calendly.com/paula-yji/simplicidad" videoID='./videos/retoJueves.mp4' />
                     <Flotante tipo="Cono" estilos={{ bottom: '160px', right: '20px', width: '120px' }} />
                     <Flotante tipo="Molecula2" estilos={{ bottom: '0', right: '90%', width: '120px' }} />
                 </div>
             </div>
-        <img className='separador' src="./ciencia/separador3.svg" alt="" />
+            <img className='separador' src="./ciencia/separador3.svg" alt="" />
         </div>
     )
 }

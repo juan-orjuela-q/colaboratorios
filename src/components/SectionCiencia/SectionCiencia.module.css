@@ -27,7 +27,7 @@
     width: 460px;
     height: 765px;
     position: absolute;
-    top: 620px;
+    top: 480px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -53,11 +53,14 @@
 .ponentes .col2 {
     margin-top: -100px;
 }
+.col2 > div:first-child {
+    margin-bottom: 240px;
+}
 .triangulo {
     position: absolute;
     width: 520px;
     /* height: 649px; */
-    top: 62px;
+    top: -30px;
     left: 50%;
     margin-left: -239px;
     transform: rotate(9deg);
