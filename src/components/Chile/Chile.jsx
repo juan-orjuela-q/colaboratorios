@@ -10,7 +10,7 @@ function Chile({isopen}) {
     const chile = useRef()
 
     let frameCount = 5,
-        urls = new Array(frameCount).fill().map((o, i) => `/chile/chile${(i + 1)}.webp`);
+        urls = new Array(frameCount).fill().map((o, i) => `./chile/chile${(i + 1)}.webp`);
     
     function imageSequence(config) {
         

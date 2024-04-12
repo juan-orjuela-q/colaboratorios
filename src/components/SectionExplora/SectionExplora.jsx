@@ -26,14 +26,14 @@ function SectionExplora() {
                 <div className="burbuja burbuja1"></div>
                 <div className="burbuja burbuja2"></div>
                 <div className="burbuja burbuja3"></div>
-                <img src="/explora/explora_mente.svg" alt="Explora y prepara tu mente para este encuentro" />
+                <img src="./explora/explora_mente.svg" alt="Explora y prepara tu mente para este encuentro" />
 
             </div>
             <div className={styles.final}>
                 <div className="finalAtom"></div>
-                <img src="/explora/mesa_experimentos.webp" alt="Laboratorio" />
+                <img src="./explora/mesa_experimentos.webp" alt="Laboratorio" />
                 <div className={`fruta ${styles.chile}`}>
-                    <img src="/explora/chile.png" alt="Chile" />
+                    <img src="./explora/chile.png" alt="Chile" />
                     <Tooltip
                         titulo="Los procrastinnovadores"
                         descripcion="Un podcast que nos muestra los beneficios tiene la procrastinación 
@@ -43,7 +43,7 @@ function SectionExplora() {
                         css={{left: 0, transform: 'none'} } />
                 </div>
                 <div className={`fruta ${styles.limon}`}>
-                    <img src="/explora/limon.png" alt="Limón" />
+                    <img src="./explora/limon.png" alt="Limón" />
                     <Tooltip
                         titulo="Fooduristic 2023"
                         descripcion="Contiene las tendencias, las reflexiones y las buenas prácticas de los protagonistas de 
@@ -53,7 +53,7 @@ function SectionExplora() {
                         estilos="estilo2" />
                 </div>
                 <div className={`fruta ${styles.manzana}`}>
-                    <img src="/explora/manzana.png" alt="Manzana" />
+                    <img src="./explora/manzana.png" alt="Manzana" />
                     <Tooltip
                         titulo="Justifica tu respuesta"
                         descripcion="Da consejos para el día a día en el aula, sobre nuevas metodologías, resolución de 
@@ -64,7 +64,7 @@ function SectionExplora() {
                         css={{right: '15%', left: 'initial', transform: 'none'} } />
                 </div>
                 <div className={`fruta ${styles.probeta1}`}>
-                    <img src="/explora/probeta1.png" alt="Probeta" />
+                    <img src="./explora/probeta1.png" alt="Probeta" />
                     <Tooltip
                         titulo="El efecto mariposa de la 
                         imprenta de Gutenberg."
@@ -73,7 +73,7 @@ function SectionExplora() {
                         estilos="estilo4" />
                 </div>
                 <div className={`fruta ${styles.probeta2}`}>
-                    <img src="/explora/probeta2.png" alt="Probeta" />
+                    <img src="./explora/probeta2.png" alt="Probeta" />
                     <Tooltip
                         titulo="How to manage for 
                         collective creativity"
@@ -84,7 +84,7 @@ function SectionExplora() {
                 </div>
             </div>
             <div className={styles.colophon}>
-                <img src="/explora/imagix_color.svg" alt="Imagix" />
+                <img src="./explora/imagix_color.svg" alt="Imagix" />
             </div>
 
         </div>

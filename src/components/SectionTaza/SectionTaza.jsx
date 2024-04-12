@@ -29,7 +29,7 @@ function SectionTaza({isopen}) {
     return (
         <div id="seccionTaza" className={styles.sectionTaza} ref={sectionTaza}>
             <header className={`${styles.header} container`}>
-                <img className={styles.tazaTitulo} src="/taza/futuroTaza.svg" alt="El futuro en una taza" />
+                <img className={styles.tazaTitulo} src="./taza/futuroTaza.svg" alt="El futuro en una taza" />
                 <Chile isopen={isopen}/>
                 <Flotante tipo="Molecula2" estilos={{ top: '-220px', left: '50%', width: '160px' }} />
             </header>
@@ -42,10 +42,10 @@ function SectionTaza({isopen}) {
                         o características futuras desde
                         <strong>la mirada de personas que se están atreviendo a experimentar.</strong>
                     </p>
-                    <img className='cuposTaza' src="/taza/cupos.svg" alt="Inscríbete pronto hay 50 cupos para cada taza" />
-                    <Inscripcion numero="1" img="/taza/invitado1.png" enlace="#"  videoID='/videos/test.mp4'/>
+                    <img className='cuposTaza' src="./taza/cupos.svg" alt="Inscríbete pronto hay 50 cupos para cada taza" />
+                    <Inscripcion numero="1" img="./taza/invitado1.png" enlace="#"  videoID='./videos/test.mp4'/>
                     <div className={styles.experimentaccion}>
-                        <img src="/taza/experimentaccion.svg" alt="Experimentacción" />
+                        <img src="./taza/experimentaccion.svg" alt="Experimentacción" />
                         <p className="bold">
                             Experimentar es un juego que despierta nuestra curiosidad y nos lleva a desbloquear niveles, descubrir nuevas cosas y
                             divertirnos en el proceso.<br /><br />
@@ -55,20 +55,20 @@ function SectionTaza({isopen}) {
 
                 </div>
                 <div className={styles.col2}>
-                    <Inscripcion numero="2" img="/taza/invitado2.png"  enlace="#"   />
-                    <Inscripcion numero="3" img="/taza/invitado3.png"  enlace="#"   />
+                    <Inscripcion numero="2" img="./taza/invitado2.png"  enlace="#"   />
+                    <Inscripcion numero="3" img="./taza/invitado3.png"  enlace="#"   />
                     <Flotante tipo="Cono" estilos={{ position: 'relative', right: '-50%', top: '-30px', width: '150px' }} />
                 </div>
                 <div className={styles.probeta}>
-                    <img src="/taza/probeta.webp" alt="" />
+                    <img src="./taza/probeta.webp" alt="" />
 
                 </div>
             </div>
             <div className={`${styles.manzana} container`}>
-                <img src="/taza/fllecha.svg" alt="" />
+                <img src="./taza/fllecha.svg" alt="" />
                 <Manzana />
             </div>
-            <img className='separador' src="/taza/separador2.svg" alt="" />
+            <img className='separador' src="./taza/separador2.svg" alt="" />
         </div>
     )
 }

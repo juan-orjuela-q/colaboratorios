@@ -3,7 +3,7 @@
     width: 550px;
     height: 550px;
     right: 150px;
-    background: url('/manzana/base.webp') no-repeat center;
+    background: url('./manzana/base.webp') no-repeat center;
     background-size: contain;
     top: -120px;
     z-index: 1;
@@ -14,6 +14,6 @@
     height: 350px;
     top: -22px;
     right: 38px;
-    background:  url('/manzana/pedazo.webp') no-repeat center;
+    background:  url('./manzana/pedazo.webp') no-repeat center;
     background-size: contain;
 }

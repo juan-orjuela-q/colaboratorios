@@ -19,8 +19,8 @@ function Audio() {
 
     return (
         <div className={styles.audioBoton} onClick={handleClick}>
-            <audio ref={audio} src="/audio/bubbles.mp3" loop autoPlay={isPlaying}></audio>
-            <img src={isPlaying ? "/audio/audioOn.svg" : "/audio/audioOff.svg"} alt="Audio" />
+            <audio ref={audio} src="./audio/bubbles.mp3" loop autoPlay={isPlaying}></audio>
+            <img src={isPlaying ? "./audio/audioOn.svg" : "./audio/audioOff.svg"} alt="Audio" />
         </div>
     )
 }

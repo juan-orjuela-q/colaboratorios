@@ -27,14 +27,14 @@ function SectionAprendizaje() {
         <div className={styles.sectionAprendizaje} ref={sectionAprendizaje}>
             <Atom />
             <header className={`${styles.header} container`}>
-                <img className={styles.aprendizajeTitulo} src="/aprendizaje/aprendizaje.svg" alt="Prepárate para el aprendizaje" />
+                <img className={styles.aprendizajeTitulo} src="./aprendizaje/aprendizaje.svg" alt="Prepárate para el aprendizaje" />
                 <Naranja />
                 <Flotante tipo="Molecula" estilos={{ top: '20px' }} />
                 <Flotante tipo="Cubo" estilos={{ right: '0', top: '-30px', width: '100px' }} />
             </header>
             <div className={`${styles.agenda} container`}>
                 <div className={styles.col1}>
-                    <img className='martes' src="/aprendizaje/martes.svg" alt="" />
+                    <img className='martes' src="./aprendizaje/martes.svg" alt="" />
                     <Evento
                         hora="8:00am - 10:20am"
                         titulo="HERRAMIENTAS Y RETO ALKIM-IA"
@@ -55,7 +55,7 @@ function SectionAprendizaje() {
                         label="Acceso general al Colaboratorio" />
                 </div>
                 <div className={styles.col2}>
-                    <img className='jueves' src="/aprendizaje/jueves.svg" alt="" />
+                    <img className='jueves' src="./aprendizaje/jueves.svg" alt="" />
                     <Evento
                         hora="8:00am - 10:20am"
                         titulo="HERRAMIENTAS Y RETO DE SIMPLICIDAD"
@@ -73,20 +73,20 @@ function SectionAprendizaje() {
 
                 </div>
                 <div className={styles.erlenmeyer}>
-                    <img src="/aprendizaje/erlenmeyer.webp" alt="" />
+                    <img src="./aprendizaje/erlenmeyer.webp" alt="" />
                 </div>
 
             </div>
             <div className={styles.recomendacionContainer}>
-                <img src="/aprendizaje/comillas.svg" alt="" className="comilla comilla1" />
+                <img src="./aprendizaje/comillas.svg" alt="" className="comilla comilla1" />
                 <p className={styles.recomendacion}>Todos los experimentos en<br />
                     nuestro Colaboratorio están pensados<br />
                     para darte <strong>herramientas creativas</strong>,<br />
                     no pierdas la oportunidad de<br />
                     <strong>nutrir y expandir tu mente.</strong></p>
-                    <img src="/aprendizaje/comillas.svg" alt="" className="comilla comilla2" />
+                    <img src="./aprendizaje/comillas.svg" alt="" className="comilla comilla2" />
             </div>
-            <img className='separador' src="/aprendizaje/separador1.svg" alt="" />
+            <img className='separador' src="./aprendizaje/separador1.svg" alt="" />
         </div>
     )
 }

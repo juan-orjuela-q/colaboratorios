@@ -27,7 +27,7 @@ function Inscripcion({ numero, img, titulo, enlace, fecha, videoID = 'dQw4w9WgXc
     return (
         <div className={styles.inscripcion} ref={inscripcion}>
             <div className="contenedor">
-                {numero && <img className={styles.numero} src={`/intro/num${numero}.svg`} alt={numero} />}
+                {numero && <img className={styles.numero} src={`./intro/num${numero}.svg`} alt={numero} />}
                 {fecha && <img className={styles.fecha} src={fecha} alt="Fecha" />}
                 <div className={styles.thumb} onClick={()=>{handleClick(videoID)}}>
                     <div>

@@ -21,7 +21,7 @@ function Ponente({ img, titulo, descripcion }) {
                 <h3>{titulo}</h3>
                 <div className={styles.thumb}>
                     <div>
-                        <img src={`/ciencia/${img}`} alt={titulo} />
+                        <img src={`./ciencia/${img}`} alt={titulo} />
                     </div>
                 </div>
                 <p>{descripcion}</p>

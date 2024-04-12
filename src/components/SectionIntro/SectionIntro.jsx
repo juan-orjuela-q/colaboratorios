@@ -46,9 +46,9 @@ function SectionIntro() {
         <>
             <div className={styles.sectionIntro} ref={sectionIntro}>
                 <div className="container">
-                    <img className={styles.logoImagix} src="/intro/logoImagix.svg" alt="Imagix" />
+                    <img className={styles.logoImagix} src="./intro/logoImagix.svg" alt="Imagix" />
                     <div className={styles.info}>
-                        <img src="/intro/colaboratorioLogo.svg" alt="Colaboratorios" />
+                        <img src="./intro/colaboratorioLogo.svg" alt="Colaboratorios" />
                         <p className="bold">
                             Estás en el lugar para experimentar, colaborar e
                             innovar, descubre las mezclas que elevarán
@@ -57,8 +57,8 @@ function SectionIntro() {
                     </div>
                 </div>
                 <div className={styles.media}>
-                    <img src="/intro/pedestal_largo.svg" alt="" />
-                    <video src="/intro/limonMorado.mp4" ref={videoLimon}></video>
+                    <img src="./intro/pedestal_largo.svg" alt="" />
+                    <video src="./intro/limonMorado.mp4" ref={videoLimon}></video>
                 </div>
                 <div className={styles.cortinas}>
                     <div className={styles.cortina1}></div>
@@ -93,7 +93,7 @@ function Objetivos() {
         <div className={styles.objetivos} ref={objetivos}>
 
             <div className="container">
-                <img src="/intro/losObjetivos.svg" alt="Los objetivos de la experimentación" />
+                <img src="./intro/losObjetivos.svg" alt="Los objetivos de la experimentación" />
                 <ul>
                     <li>Identificar el aporte de la <strong>mente creativa.</strong></li>
                     <li>Deducir métodos de <strong>experimentación activa.</strong></li>
