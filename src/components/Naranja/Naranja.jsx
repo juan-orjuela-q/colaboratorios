@@ -14,7 +14,10 @@ function Naranja() {
     }, { scope: naranja });
     return (
         <div className={styles.naranja} ref={naranja}>
-            <div className={styles.frames}></div>
+            <img src="./naranja/base.webp" alt="Manzana" className="imgFondo" />
+            <div className={styles.frames}>
+                <img src="./naranja/petalos1.webp" alt="Manzana" className="imgFondo" />
+            </div>
         </div>
     )
 }

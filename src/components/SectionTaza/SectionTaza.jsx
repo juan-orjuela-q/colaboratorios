@@ -43,20 +43,16 @@ function SectionTaza({isopen}) {
                         <strong>la mirada de personas que se están atreviendo a experimentar.</strong>
                     </p>
                     <img className='cuposTaza' src="./taza/cupos.svg" alt="Inscríbete pronto hay 50 cupos para cada taza" />
-                    <Inscripcion numero="1" img="./taza/invitado1.png" enlace="#"  videoID='./videos/test.mp4'/>
+                    <Inscripcion numero="1" img="./taza/invitado1.png" enlace="https://calendly.com/paula-yji/-con-catalina-valencia" videoID='./videos/taza1.mp4'/>
                     <div className={styles.experimentaccion}>
-                        <img src="./taza/experimentaccion.svg" alt="Experimentacción" />
-                        <p className="bold">
-                            Experimentar es un juego que despierta nuestra curiosidad y nos lleva a desbloquear niveles, descubrir nuevas cosas y
-                            divertirnos en el proceso.<br /><br />
-                            <strong>¡Atrévete a experimentar!</strong>
-                        </p>
+                        <img src="./taza/preparateAccion.png" alt="Preparate" />
+                        
                     </div>
 
                 </div>
                 <div className={styles.col2}>
-                    <Inscripcion numero="2" img="./taza/invitado2.png"  enlace="#"   />
-                    <Inscripcion numero="3" img="./taza/invitado3.png"  enlace="#"   />
+                    <Inscripcion numero="2" img="./taza/invitado2.png"  enlace="https://calendly.com/paula-yji/con-julia-varela" videoID='./videos/taza2.mp4' />
+                    <Inscripcion numero="3" img="./taza/invitado3.png"  enlace="https://calendly.com/paula-yji/-con-pablo-naranjo"  videoID='./videos/taza3.mp4' />
                     <Flotante tipo="Cono" estilos={{ position: 'relative', right: '-50%', top: '-30px', width: '150px' }} />
                 </div>
                 <div className={styles.probeta}>

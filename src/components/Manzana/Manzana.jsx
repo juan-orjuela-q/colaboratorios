@@ -19,7 +19,11 @@ function Manzana() {
 
     return (
         <div className={styles.manzana} ref={manzana}>
-            <div className={styles.frames}></div>
+            <img src="./manzana/base.webp" alt="Manzana" className="imgFondo" />
+            <div className={styles.frames}>
+                <img src="./manzana/pedazo.webp" alt="Manzana Pedazo" className="imgFondo" />
+            </div>
+        <a href="https://drive.google.com/drive/folders/19Nz12YhXRpf8oMkH5f3Yn5sHiMeRnxIT?usp=sharing" target="_blank">&nbsp;</a>
         </div>
     )
 }

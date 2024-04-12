@@ -3,10 +3,9 @@
     width: 550px;
     height: 550px;
     right: 150px;
-    background: url('./manzana/base.webp') no-repeat center;
-    background-size: contain;
+   
     top: -120px;
-    z-index: 1;
+    
 }
 .frames {
     position: absolute;
@@ -14,6 +13,31 @@
     height: 350px;
     top: -22px;
     right: 38px;
-    background:  url('./manzana/pedazo.webp') no-repeat center;
-    background-size: contain;
+    z-index: 1000;
+    pointer-events: none;
+}
+.manzana img {
+    z-index: 1000;
+    pointer-events: none;
+    position: relative;
+}
+.manzana a {
+    cursor: pointer;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    font-size: 0;
+    color: transparent;
+    z-index: 999;
+    border-radius: 100%;
+    background: radial-gradient(circle, transparent, transparent 70%);
+    transition: all 1.3s ease;
+}
+.manzana a:hover {
+    /*background radial de blanco a transparente pero que en el borde ya sea totalmente transparente*/
+    background: radial-gradient(circle, #ffffff5d, transparent 70%);
+
+    
 }

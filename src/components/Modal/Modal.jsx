@@ -16,7 +16,7 @@ function Modal() {
             modal.style.display = 'flex'; // Mostrar el modal al abrirlo
             const video = document.createElement('video');
             video.src = videoPath;
-            video.controls = true;
+            video.controls = false;
             video.autoplay = true;
             videoContainer.appendChild(video);
         } else {

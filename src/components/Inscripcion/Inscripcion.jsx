@@ -36,7 +36,7 @@ function Inscripcion({ numero, img, titulo, enlace, fecha, videoID = 'dQw4w9WgXc
                 </div>
                 {titulo && <h3>{titulo}</h3>}
 
-                <a href={enlace}>INSCRÍBETE<br /> <strong>AQUÍ</strong></a>
+                <a href={enlace} target='_blank'>INSCRÍBETE<br /> <strong>AQUÍ</strong></a>
             </div>
 
         </div>
