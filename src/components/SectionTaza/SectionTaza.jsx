@@ -43,7 +43,7 @@ function SectionTaza({isopen}) {
                         <strong>la mirada de personas que se están atreviendo a experimentar.</strong>
                     </p>
                     <img className='cuposTaza' src="./taza/cupos.svg" alt="Inscríbete pronto hay 50 cupos para cada taza" />
-                    <Inscripcion numero="1" img="./taza/coverTazaMagenta.webp" enlace="https://calendly.com/paula-yji/-con-catalina-valencia" videoID='./videos/taza1.mp4'/>
+                    <Inscripcion numero="1" img="./taza/coverTazaMagenta.webp" enlace="https://calendly.com/experienciasayaka/-con-catalina-valencia" videoID='./videos/taza1.mp4'/>
                     <div className={styles.experimentaccion}>
                         <img src="./taza/preparateAccion.png" alt="Preparate" />
                         
@@ -51,8 +51,8 @@ function SectionTaza({isopen}) {
 
                 </div>
                 <div className={styles.col2}>
-                    <Inscripcion numero="2" img="./taza/coverTazaMorada.webp"  enlace="https://calendly.com/paula-yji/con-julia-varela" videoID='./videos/taza2.mp4' />
-                    <Inscripcion numero="3" img="./taza/coverTazaAzul.webp"  enlace="https://calendly.com/paula-yji/-con-pablo-naranjo"  videoID='./videos/taza3.mp4' />
+                    <Inscripcion numero="2" img="./taza/coverTazaMorada.webp"  enlace="https://calendly.com/jorgeayaka/con-julia-varela" videoID='./videos/taza2.mp4' />
+                    <Inscripcion numero="3" img="./taza/coverTazaAzul.webp"  enlace="https://calendly.com/antoayaka/-con-pablo-naranjo"  videoID='./videos/taza3.mp4' />
                     <Flotante tipo="Cono" estilos={{ position: 'relative', right: '-50%', top: '-30px', width: '150px' }} />
                 </div>
                 <div className={styles.probeta}>

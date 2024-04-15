@@ -61,11 +61,11 @@ function SectionCiencia() {
                     <img className='imgReto' src="./ciencia/reto.svg" alt="" />
                     <p className='descReto'>Es momento de poner a prueba las hipótesis, hacer uso de todo instrumento y <strong>activar la mente creativa.</strong><br /><br />
                         Incríbete tenemos <strong>200 cupos</strong> para cada reto.</p>
-                    <Inscripcion fecha="./ciencia/martesReto.svg" img="./ciencia/thumbRetoMartes2.webp" enlace="https://calendly.com/paula-yji/alkimia" videoID='./videos/retoMartes.mp4' />
+                    <Inscripcion fecha="./ciencia/martesReto.svg" img="./ciencia/thumbRetoMartes2.webp" enlace="https://calendly.com/experienciasayaka/alkimia" videoID='./videos/retoMartes.mp4' />
                     <Flotante tipo="Cubo" estilos={{ bottom: '-160px', left: '20px', width: '120px' }} />
                 </div>
                 <div className={styles.col2}>
-                    <Inscripcion fecha="./ciencia/juevesReto.svg" img="./ciencia/thumbRetoJueves2.webp" enlace="https://calendly.com/paula-yji/simplicidad" videoID='./videos/retoJueves.mp4' />
+                    <Inscripcion fecha="./ciencia/juevesReto.svg" img="./ciencia/thumbRetoJueves2.webp" enlace="https://calendly.com/experienciasayaka/simplicidad" videoID='./videos/retoJueves.mp4' />
                     <Flotante tipo="Cono" estilos={{ bottom: '160px', right: '20px', width: '120px' }} />
                     <Flotante tipo="Molecula2" estilos={{ bottom: '0', right: '90%', width: '120px' }} />
                 </div>
